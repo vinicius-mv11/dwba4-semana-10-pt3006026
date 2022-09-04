@@ -3,104 +3,89 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width">
-  <title>HOME - IFSP</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>HOME - IFSP - Pirituba - DWBA4</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link href="./js/disabling.js" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-  <header>
-    <div style="text-align: right;">
-      <span><a href="index.html">HOME</a> |</span>
-      <span><a href="contato.html">CONTATO |</a></span>
-      <span style="margin-right: 20px"><a href="sobre.html">SOBRE</a></span>
-    </div>
+  <header id="cabecalho">
+    <nav>
+      <object width="100%" height="65px" data="menu.html"></object>
+    </nav>
+
+    <img src="./imagens/Logo.jpg" />
     <br />
   </header>
 
-  <section>
-    <h4>Cursos</h4>
-    <ul>
-      <li>
-        <a href="ads.html">Análise e Desenvolvimento de Sistemas</a>
-      </li>
-      <li>
-        <a href="eng-producao.html" href>Engenharia de Produção</a>
-      </li>
-      <li>
-        <a href="gestao-ti.html">Gestão em Tecnologia da Informação</a>
-      </li>
-      <li>
-        <a href="letras.html">Letras</a>
-      </li>
-    </ul>
-  </section>
-  <section>
-    <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/Logo.jpg" />
-    <br />
-    -
-    <figure>
-      <img width=50% src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/SEJA_RARO.jpg" />
-      <figcaption>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</figcaption>
-    </figure>
-  </section>
+  <main>
+    <section>
+      <h2>Cursos</h2>
+      <ul>
+        <li>
+          <a href="ads.html">Análise e Desenvolvimento de Sistemas</a>
+        </li>
+        <li>
+          <a href="eng-producao.html" href>Engenharia de Produção</a>
+        </li>
+        <li>
+          <a href="gestao-ti.html">Gestão em Tecnologia da Informação</a>
+        </li>
+        <li>
+          <a href="letras.html">Letras</a>
+        </li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Sobre a Biblioteca</h2>
-    <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/library.jpeg" />
-    <h4>Conheça os novos títulos disponíveis na nossa biblioteca</h4>
-    <h6>Publicado: Quarta-feira, 14 de agosto de 2019</h6>
-  </section>
+    <section>
+      <h2>Eventos</h2>
+      <figure>
+        <img width=50% src="./imagens/SEJA_RARO.jpg" />
+        <figcaption>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</figcaption>
+      </figure>
+    </section>
 
-  <section>
-    <h2>Conheça o SUAP</h2>
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0">
-    </iframe>
-  </section>
-  <br />
-  <br />
+    <section>
+      <h2>Sobre a Biblioteca</h2>
+      <img src="./imagens/library.jpeg" />
+      <h4>Conheça os novos títulos disponíveis na nossa biblioteca</h4>
+      <h6>Publicado: Quarta-feira, 14 de agosto de 2019</h6>
+    </section>
 
-  <section>
-    <img width="45" src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/MoveTop.png" />
-    <img width="45" src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/facebook.png" />
-    <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011)
-      2504-0100</p>
-  </section>
+    <section>
+      <h2>Conheça o SUAP</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0">
+      </iframe>
+      <br>
+      <br>
+    </section>
 
+  </main>
 
+  <footer>
+
+    <section>
+      <img width="45" src="./imagens/MoveTop.png" />
+      <img width="45" src="./imagens/facebook.png" />
+      <p>
+        IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011)
+        2504-0100
+      </p>
+    </section>
+
+  </footer>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.8.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
   <script src="script.js"></script>
 
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import {initializeApp} from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
-    import {getAnalytics} from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyAhFaRddYQarUuvR4_TG8H6JQ-OwZX-El0",
-      authDomain: "dwba4-aefde.firebaseapp.com",
-      projectId: "dwba4-aefde",
-      storageBucket: "dwba4-aefde.appspot.com",
-      messagingSenderId: "127466447193",
-      appId: "1:127466447193:web:c6ec3cb6fabe16ad5e6c48",
-      measurementId: "G-C2W5XQYRDV"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
 </body>
 
 </html>
