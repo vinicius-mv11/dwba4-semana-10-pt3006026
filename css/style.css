@@ -3,6 +3,10 @@ html, body {
   width: 100%;
 }
 
+img {
+  max-width: 100%;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -63,13 +67,29 @@ h-25 {
   border-radius: 50%;
 }
 
-figcaption {
-  border: 1px  dashed;
-}
-
 textarea {
   resize: none; 
   box-sizing: border-box;
   margin: 1rem 0;
   padding: 20px;
+}
+
+.grid-container {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-template-rows: 50% 50%; */
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.grid-item figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
 }
