@@ -6,9 +6,12 @@
   <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width">
   <title>HOME - IFSP - Pirituba - DWBA4</title>
-  <link href="./css/style.css" rel="stylesheet" type="text/css" />
-  <link href="./js/disabling.js" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/x-icon" href="./imagens/favicon.ico">
+
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link href="./css/slider.css" rel="stylesheet" type="text/css" />
+
+  <script src="./js/slider.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -21,6 +24,52 @@
   </header>
 
   <main>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="./imagens/A.png" class="w-100">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="./imagens/B.jpg" class="w-100">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="./imagens/C.jpg" class="w-100">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <iframe width="550" height="315" class="center" src="https://www.youtube.com/embed/5g5LQe3m8Po"
+          title="Desafio de Inovação: webinar com executivos da empresa Sem Parar e representantes da Inova IFSP"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <div class="text">Caption Four</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
 
     <section class="grid-container">
 
@@ -88,13 +137,10 @@
 
   </footer>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/8.8.1/firebase-app.js"></script>
-
   <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-  <script src="script.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 
