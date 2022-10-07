@@ -40,3 +40,13 @@ textarear {
   box-sizing: border-box;
   width: 100%;
 }
+
+.form-login {
+  width: 100%;
+  max-width: 350px;
+}
+
+.form-title {
+  font-family:Arial, Helvetica, sans-serif;
+  height: 10px
+}
